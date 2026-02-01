@@ -23,7 +23,7 @@ const App: React.FC = () => {
 
       try {
         const ai = new GoogleGenAI(apiKey);
-        const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" }); // Correction du nom du modèle
+        const model = ai.getGenerativeModel({ model: "gemini-1.5-flash" }); 
         const result = await model.generateContent("Donne moi juste une exclamation courte comme . Un seul mot.");
         const response = await result.response;
         setSweetMessage(response.text().trim());
@@ -48,7 +48,7 @@ const App: React.FC = () => {
           </div>
           
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 title-font tracking-tight">
-            Ma puce, veux-tu être ma Valentine ?
+            Barbara Steylla, veux-tu être ma Valentine ?
           </h1>
 
           <div className="flex flex-col items-center gap-6 mt-4">
